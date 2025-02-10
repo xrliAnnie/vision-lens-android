@@ -225,7 +225,7 @@
         errorLine2="         ~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml"
-            line="29"
+            line="31"
             column="10"/>
     </issue>
 
@@ -243,7 +243,7 @@
         errorLine2="         ~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml"
-            line="36"
+            line="38"
             column="10"/>
     </issue>
 
@@ -261,7 +261,7 @@
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="119"
+            line="188"
             column="35"/>
     </issue>
 
@@ -279,7 +279,7 @@
         errorLine2="                                   ~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="119"
+            line="188"
             column="36"/>
     </issue>
 
@@ -297,7 +297,7 @@
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="35"/>
     </issue>
 
@@ -315,7 +315,7 @@
         errorLine2="                                   ~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="36"/>
     </issue>
 
@@ -333,7 +333,7 @@
         errorLine2="                                                         ~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="58"/>
     </issue>
 
@@ -351,7 +351,7 @@
         errorLine2="                                  ~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="129"
+            line="206"
             column="35"/>
     </issue>
 
@@ -369,7 +369,25 @@
         errorLine2="                                   ~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
-            line="129"
+            line="206"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="                resultText.text = &quot;Permissions not granted&quot;"
+        errorLine2="                                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt"
+            line="229"
             column="36"/>
     </issue>
 
@@ -385,7 +403,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml"
-            line="34"
+            line="36"
             column="13"/>
     </issue>
 
@@ -401,7 +419,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml"
-            line="41"
+            line="43"
             column="13"/>
     </issue>
 

@@ -92,10 +92,10 @@
    application iconwill not show if your monochrome attribute is not also
    specified in android:roundIcon.
 
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:29: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:31: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
         <Button
          ~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:36: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:38: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
         <Button
          ~~~~~~
 
@@ -106,27 +106,30 @@
 
    https://material.io/components/dialogs/
 
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:119: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:188: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
                 resultText.text = "Error: ${e.message}"
                                   ~~~~~~~~~~~~~~~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:119: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:188: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
                 resultText.text = "Error: ${e.message}"
                                    ~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:126: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:201: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
                 resultText.text = "Detected ${faces.size} faces"
                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:126: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:201: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
                 resultText.text = "Detected ${faces.size} faces"
                                    ~~~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:126: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:201: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
                 resultText.text = "Detected ${faces.size} faces"
                                                          ~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:129: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:206: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
                 resultText.text = "Error: ${e.message}"
                                   ~~~~~~~~~~~~~~~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:129: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:206: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
                 resultText.text = "Error: ${e.message}"
                                    ~~~~~~~
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/java/app/visionlens/MainActivity.kt:229: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                resultText.text = "Permissions not granted"
+                                   ~~~~~~~~~~~~~~~~~~~~~~~
 
    Explanation for issues of type "SetTextI18n":
    When calling TextView#setText
@@ -141,10 +144,10 @@
 
    https://developer.android.com/guide/topics/resources/localization.html
 
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:34: Warning: Hardcoded string "Scan Text", should use @string resource [HardcodedText]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:36: Warning: Hardcoded string "Scan Text", should use @string resource [HardcodedText]
             android:text="Scan Text" />
             ~~~~~~~~~~~~~~~~~~~~~~~~
-/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:41: Warning: Hardcoded string "Detect Faces", should use @string resource [HardcodedText]
+/Users/xiaorongli/Dev/vision-lens-android/app/src/main/res/layout/activity_main.xml:43: Warning: Hardcoded string "Detect Faces", should use @string resource [HardcodedText]
             android:text="Detect Faces" />
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -162,4 +165,4 @@
    There are quickfixes to automatically extract this hardcoded string into a
    resource lookup.
 
-0 errors, 24 warnings
+0 errors, 25 warnings

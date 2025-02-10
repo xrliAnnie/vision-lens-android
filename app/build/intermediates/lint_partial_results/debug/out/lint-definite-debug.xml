@@ -13,8 +13,8 @@
                 value="?android:attr/buttonBarStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="789"
-                    endOffset="1532"/>
+                    startOffset="858"
+                    endOffset="1601"/>
             </fix-attribute>
             <fix-attribute
                 description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
@@ -22,8 +22,8 @@
                 value="?android:attr/buttonBarButtonStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="1071"
-                    endOffset="1285"/>
+                    startOffset="1140"
+                    endOffset="1354"/>
             </fix-attribute>
             <fix-attribute
                 description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
@@ -31,18 +31,18 @@
                 value="?android:attr/buttonBarButtonStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="1295"
-                    endOffset="1512"/>
+                    startOffset="1364"
+                    endOffset="1581"/>
             </fix-attribute>
         </fix-composite>
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-            line="29"
+            line="31"
             column="10"
-            startOffset="1072"
-            endLine="29"
+            startOffset="1141"
+            endLine="31"
             endColumn="16"
-            endOffset="1078"/>
+            endOffset="1147"/>
     </incident>
 
     <incident
@@ -51,12 +51,12 @@
         message="Hardcoded string &quot;Scan Text&quot;, should use `@string` resource">
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-            line="34"
+            line="36"
             column="13"
-            startOffset="1258"
-            endLine="34"
+            startOffset="1327"
+            endLine="36"
             endColumn="37"
-            endOffset="1282"/>
+            endOffset="1351"/>
     </incident>
 
     <incident
@@ -71,8 +71,8 @@
                 value="?android:attr/buttonBarStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="789"
-                    endOffset="1532"/>
+                    startOffset="858"
+                    endOffset="1601"/>
             </fix-attribute>
             <fix-attribute
                 description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
@@ -80,8 +80,8 @@
                 value="?android:attr/buttonBarButtonStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="1071"
-                    endOffset="1285"/>
+                    startOffset="1140"
+                    endOffset="1354"/>
             </fix-attribute>
             <fix-attribute
                 description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
@@ -89,18 +89,18 @@
                 value="?android:attr/buttonBarButtonStyle">
                 <range
                     file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-                    startOffset="1295"
-                    endOffset="1512"/>
+                    startOffset="1364"
+                    endOffset="1581"/>
             </fix-attribute>
         </fix-composite>
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-            line="36"
+            line="38"
             column="10"
-            startOffset="1296"
-            endLine="36"
+            startOffset="1365"
+            endLine="38"
             endColumn="16"
-            endOffset="1302"/>
+            endOffset="1371"/>
     </incident>
 
     <incident
@@ -109,12 +109,12 @@
         message="Hardcoded string &quot;Detect Faces&quot;, should use `@string` resource">
         <location
             file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-            line="41"
+            line="43"
             column="13"
-            startOffset="1482"
-            endLine="41"
+            startOffset="1551"
+            endLine="43"
             endColumn="40"
-            endOffset="1509"/>
+            endOffset="1578"/>
     </incident>
 
     <incident
@@ -151,12 +151,12 @@
         message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="119"
+            line="188"
             column="35"
-            startOffset="4130"
-            endLine="119"
+            startOffset="7174"
+            endLine="188"
             endColumn="56"
-            endOffset="4151"/>
+            endOffset="7195"/>
     </incident>
 
     <incident
@@ -165,12 +165,12 @@
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="119"
+            line="188"
             column="36"
-            startOffset="4131"
-            endLine="119"
+            startOffset="7175"
+            endLine="188"
             endColumn="43"
-            endOffset="4138"/>
+            endOffset="7182"/>
     </incident>
 
     <incident
@@ -179,12 +179,12 @@
         message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="35"
-            startOffset="4338"
-            endLine="126"
+            startOffset="7638"
+            endLine="201"
             endColumn="65"
-            endOffset="4368"/>
+            endOffset="7668"/>
     </incident>
 
     <incident
@@ -193,12 +193,12 @@
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="36"
-            startOffset="4339"
-            endLine="126"
+            startOffset="7639"
+            endLine="201"
             endColumn="45"
-            endOffset="4348"/>
+            endOffset="7648"/>
     </incident>
 
     <incident
@@ -207,12 +207,12 @@
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="126"
+            line="201"
             column="58"
-            startOffset="4361"
-            endLine="126"
+            startOffset="7661"
+            endLine="201"
             endColumn="64"
-            endOffset="4367"/>
+            endOffset="7667"/>
     </incident>
 
     <incident
@@ -221,12 +221,12 @@
         message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="129"
+            line="206"
             column="35"
-            startOffset="4458"
-            endLine="129"
+            startOffset="7866"
+            endLine="206"
             endColumn="56"
-            endOffset="4479"/>
+            endOffset="7887"/>
     </incident>
 
     <incident
@@ -235,12 +235,26 @@
         message="String literal in `setText` can not be translated. Use Android resources instead.">
         <location
             file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
-            line="129"
+            line="206"
             column="36"
-            startOffset="4459"
-            endLine="129"
+            startOffset="7867"
+            endLine="206"
             endColumn="43"
-            endOffset="4466"/>
+            endOffset="7874"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/app/visionlens/MainActivity.kt"
+            line="229"
+            column="36"
+            startOffset="8682"
+            endLine="229"
+            endColumn="59"
+            endOffset="8705"/>
     </incident>
 
     <incident

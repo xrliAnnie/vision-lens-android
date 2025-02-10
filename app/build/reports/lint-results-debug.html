@@ -177,9 +177,9 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 24 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 25 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Sun Feb 09 17:52:44 PST 2025 by AGP (8.1.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Sun Feb 09 18:33:43 PST 2025 by AGP (8.1.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -191,7 +191,7 @@ document.getElementById(id).style.display = 'none';
       <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (1)</a>
       <a class="mdl-navigation__link" href="#MonochromeLauncherIcon"><i class="material-icons warning-icon">warning</i>Monochrome icon is not defined (2)</a>
       <a class="mdl-navigation__link" href="#ButtonStyle"><i class="material-icons warning-icon">warning</i>Button should be borderless (2)</a>
-      <a class="mdl-navigation__link" href="#SetTextI18n"><i class="material-icons warning-icon">warning</i>TextView Internationalization (7)</a>
+      <a class="mdl-navigation__link" href="#SetTextI18n"><i class="material-icons warning-icon">warning</i>TextView Internationalization (8)</a>
       <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (2)</a>
     </nav>
   </div>
@@ -231,7 +231,7 @@ document.getElementById(id).style.display = 'none';
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
 </td></tr>
 <tr>
-<td class="countColumn">7</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">8</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#SetTextI18n">SetTextI18n</a>: TextView Internationalization</td></tr>
 <tr>
 <td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
@@ -538,23 +538,23 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:29</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
-<span class="lineno"> 26 </span>        <span class="prefix">android:</span><span class="attribute">padding</span>=<span class="value">"16dp"</span>
-<span class="lineno"> 27 </span>        <span class="prefix">app:</span><span class="attribute">layout_constraintBottom_toBottomOf</span>=<span class="value">"parent"</span>>
-<span class="lineno"> 28 </span>
-<span class="caretline"><span class="lineno"> 29 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">Button</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno"> 30 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/textButton"</span>
-<span class="lineno"> 31 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
-<span class="lineno"> 32 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span></pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:31</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno"> 28 </span>        <span class="prefix">android:</span><span class="attribute">padding</span>=<span class="value">"16dp"</span>
+<span class="lineno"> 29 </span>        <span class="prefix">app:</span><span class="attribute">layout_constraintBottom_toBottomOf</span>=<span class="value">"parent"</span>>
+<span class="lineno"> 30 </span>
+<span class="caretline"><span class="lineno"> 31 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">Button</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 32 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/textButton"</span>
+<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
+<span class="lineno"> 34 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span></pre>
 
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:36</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
-<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
-<span class="lineno"> 34 </span>            <span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Scan Text"</span> />
-<span class="lineno"> 35 </span>
-<span class="caretline"><span class="lineno"> 36 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">Button</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno"> 37 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/faceButton"</span>
-<span class="lineno"> 38 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
-<span class="lineno"> 39 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span></pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:38</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno"> 35 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="lineno"> 36 </span>            <span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Scan Text"</span> />
+<span class="lineno"> 37 </span>
+<span class="caretline"><span class="lineno"> 38 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">Button</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 39 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/faceButton"</span>
+<span class="lineno"> 40 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
+<span class="lineno"> 41 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span></pre>
 
 </div>
 <div class="metadata"><div class="explanation" id="explanationButtonStyle" style="display: none;">
@@ -595,67 +595,80 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:119</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
-<span class="lineno"> 116 </span>                resultText.text = text.text
-<span class="lineno"> 117 </span>            }
-<span class="lineno"> 118 </span>            .addOnFailureListener { e ->
-<span class="caretline"><span class="lineno"> 119 </span>                resultText.text = <span class="warning"><span class="string">"Error: ${</span>e.message<span class="string">}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 120 </span>            }
-<span class="lineno"> 121 </span>    }
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:188</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 185 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 186 </span>                Log.e(TAG, <span class="string">"Text recognition failed"</span>, e)
+<span class="lineno"> 187 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 188 </span>                resultText.text = <span class="warning"><span class="string">"Error: ${</span>e.message<span class="string">}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 189 </span>            }
+<span class="lineno"> 190 </span>    }
 </pre>
 
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:119</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 116 </span>                resultText.text = text.text
-<span class="lineno"> 117 </span>            }
-<span class="lineno"> 118 </span>            .addOnFailureListener { e ->
-<span class="caretline"><span class="lineno"> 119 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Error: </span></span><span class="string">${</span>e.message<span class="string">}"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 120 </span>            }
-<span class="lineno"> 121 </span>    }
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:188</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 185 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 186 </span>                Log.e(TAG, <span class="string">"Text recognition failed"</span>, e)
+<span class="lineno"> 187 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 188 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Error: </span></span><span class="string">${</span>e.message<span class="string">}"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 189 </span>            }
+<span class="lineno"> 190 </span>    }
 </pre>
 
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:126</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
-<span class="lineno"> 123 </span>    private <span class="keyword">fun</span> processFaces(image: InputImage) {
-<span class="lineno"> 124 </span>        faceDetector.process(image)
-<span class="lineno"> 125 </span>            .addOnSuccessListener { faces ->
-<span class="caretline"><span class="lineno"> 126 </span>                resultText.text = <span class="warning"><span class="string">"Detected ${</span>faces.size<span class="string">} faces"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 127 </span>            }
-<span class="lineno"> 128 </span>            .addOnFailureListener { e ->
-<span class="lineno"> 129 </span>                resultText.text = <span class="string">"Error: ${</span>e.message<span class="string">}"</span></pre>
-
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:126</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 123 </span>    private <span class="keyword">fun</span> processFaces(image: InputImage) {
-<span class="lineno"> 124 </span>        faceDetector.process(image)
-<span class="lineno"> 125 </span>            .addOnSuccessListener { faces ->
-<span class="caretline"><span class="lineno"> 126 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Detected </span></span><span class="string">${</span>faces.size<span class="string">} faces"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 127 </span>            }
-<span class="lineno"> 128 </span>            .addOnFailureListener { e ->
-<span class="lineno"> 129 </span>                resultText.text = <span class="string">"Error: ${</span>e.message<span class="string">}"</span></pre>
-
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:126</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 123 </span>    private <span class="keyword">fun</span> processFaces(image: InputImage) {
-<span class="lineno"> 124 </span>        faceDetector.process(image)
-<span class="lineno"> 125 </span>            .addOnSuccessListener { faces ->
-<span class="caretline"><span class="lineno"> 126 </span>                resultText.text = <span class="string">"Detected ${</span>faces.size<span class="string">}</span><span class="warning"><span class="string"> faces</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 127 </span>            }
-<span class="lineno"> 128 </span>            .addOnFailureListener { e ->
-<span class="lineno"> 129 </span>                resultText.text = <span class="string">"Error: ${</span>e.message<span class="string">}"</span></pre>
-
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:129</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
-<span class="lineno"> 126 </span>                resultText.text = <span class="string">"Detected ${</span>faces.size<span class="string">} faces"</span>
-<span class="lineno"> 127 </span>            }
-<span class="lineno"> 128 </span>            .addOnFailureListener { e ->
-<span class="caretline"><span class="lineno"> 129 </span>                resultText.text = <span class="warning"><span class="string">"Error: ${</span>e.message<span class="string">}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 130 </span>            }
-<span class="lineno"> 131 </span>    }
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:201</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 198 </span>            .addOnSuccessListener { faces ->
+<span class="lineno"> 199 </span>                Log.d(TAG, <span class="string">"Face detection successful: ${</span>faces.size<span class="string">} faces found"</span>)
+<span class="lineno"> 200 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 201 </span>                resultText.text = <span class="warning"><span class="string">"Detected ${</span>faces.size<span class="string">} faces"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 202 </span>            }
+<span class="lineno"> 203 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 204 </span>                Log.e(TAG, <span class="string">"Face detection failed"</span>, e)
 </pre>
 
-<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:129</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
-<span class="lineno"> 126 </span>                resultText.text = <span class="string">"Detected ${</span>faces.size<span class="string">} faces"</span>
-<span class="lineno"> 127 </span>            }
-<span class="lineno"> 128 </span>            .addOnFailureListener { e ->
-<span class="caretline"><span class="lineno"> 129 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Error: </span></span><span class="string">${</span>e.message<span class="string">}"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 130 </span>            }
-<span class="lineno"> 131 </span>    }
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:201</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 198 </span>            .addOnSuccessListener { faces ->
+<span class="lineno"> 199 </span>                Log.d(TAG, <span class="string">"Face detection successful: ${</span>faces.size<span class="string">} faces found"</span>)
+<span class="lineno"> 200 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 201 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Detected </span></span><span class="string">${</span>faces.size<span class="string">} faces"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 202 </span>            }
+<span class="lineno"> 203 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 204 </span>                Log.e(TAG, <span class="string">"Face detection failed"</span>, e)
+</pre>
+
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:201</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 198 </span>            .addOnSuccessListener { faces ->
+<span class="lineno"> 199 </span>                Log.d(TAG, <span class="string">"Face detection successful: ${</span>faces.size<span class="string">} faces found"</span>)
+<span class="lineno"> 200 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 201 </span>                resultText.text = <span class="string">"Detected ${</span>faces.size<span class="string">}</span><span class="warning"><span class="string"> faces</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 202 </span>            }
+<span class="lineno"> 203 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 204 </span>                Log.e(TAG, <span class="string">"Face detection failed"</span>, e)
+</pre>
+
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:206</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 203 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 204 </span>                Log.e(TAG, <span class="string">"Face detection failed"</span>, e)
+<span class="lineno"> 205 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 206 </span>                resultText.text = <span class="warning"><span class="string">"Error: ${</span>e.message<span class="string">}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 207 </span>            }
+<span class="lineno"> 208 </span>    }
+</pre>
+
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:206</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 203 </span>            .addOnFailureListener { e ->
+<span class="lineno"> 204 </span>                Log.e(TAG, <span class="string">"Face detection failed"</span>, e)
+<span class="lineno"> 205 </span>                resultText.visibility = View.VISIBLE
+<span class="caretline"><span class="lineno"> 206 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Error: </span></span><span class="string">${</span>e.message<span class="string">}"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 207 </span>            }
+<span class="lineno"> 208 </span>    }
+</pre>
+
+<span class="location"><a href="../../src/main/java/app/visionlens/MainActivity.kt">../../src/main/java/app/visionlens/MainActivity.kt</a>:229</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 226 </span>                startCamera()
+<span class="lineno"> 227 </span>            } <span class="keyword">else</span> {
+<span class="lineno"> 228 </span>                Log.e(TAG, <span class="string">"Permissions not granted by the user"</span>)
+<span class="caretline"><span class="lineno"> 229 </span>                resultText.text = <span class="string">"</span><span class="warning"><span class="string">Permissions not granted</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 230 </span>                finish()
+<span class="lineno"> 231 </span>            }
+<span class="lineno"> 232 </span>        }
 </pre>
 
 </div>
@@ -697,23 +710,23 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:34</span>: <span class="message">Hardcoded string "Scan Text", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 31 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
-<span class="lineno"> 32 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
-<span class="caretline"><span class="lineno"> 34 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Scan Text"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 35 </span>
-<span class="lineno"> 36 </span>        <span class="tag">&lt;Button</span><span class="attribute">
-</span><span class="lineno"> 37 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/faceButton"</span></pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:36</span>: <span class="message">Hardcoded string "Scan Text", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
+<span class="lineno"> 34 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 35 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="caretline"><span class="lineno"> 36 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Scan Text"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 37 </span>
+<span class="lineno"> 38 </span>        <span class="tag">&lt;Button</span><span class="attribute">
+</span><span class="lineno"> 39 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/faceButton"</span></pre>
 
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:41</span>: <span class="message">Hardcoded string "Detect Faces", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 38 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
-<span class="lineno"> 39 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 40 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
-<span class="caretline"><span class="lineno"> 41 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Detect Faces"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 42 </span>    <span class="tag">&lt;/LinearLayout></span>
-<span class="lineno"> 43 </span>
-<span class="lineno"> 44 </span><span class="tag">&lt;/androidx.constraintlayout.widget.ConstraintLayout></span> </pre>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:43</span>: <span class="message">Hardcoded string "Detect Faces", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 40 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"0dp"</span>
+<span class="lineno"> 41 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 42 </span>            <span class="prefix">android:</span><span class="attribute">layout_weight</span>=<span class="value">"1"</span>
+<span class="caretline"><span class="lineno"> 43 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Detect Faces"</span></span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 44 </span>    <span class="tag">&lt;/LinearLayout></span>
+<span class="lineno"> 45 </span>
+<span class="lineno"> 46 </span><span class="tag">&lt;/androidx.constraintlayout.widget.ConstraintLayout></span> </pre>
 
 </div>
 <div class="metadata"><div class="explanation" id="explanationHardcodedText" style="display: none;">

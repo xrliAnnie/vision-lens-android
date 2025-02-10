@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -170,14 +171,20 @@ class MainActivity : AppCompatActivity() {
      * Processes the image for text recognition
      */
     private fun processText(image: InputImage) {
-        Log.v(TAG, "Processing image for text recognition")
+        Log.d(TAG, "Processing image for text recognition")
         textRecognizer.process(image)
             .addOnSuccessListener { text ->
-                Log.d(TAG, "Text recognition successful: ${text.text}")
-                resultText.text = text.text
+                Log.d(TAG, "Text recognized: ${text.text}")
+                if (text.text.isNotEmpty()) {
+                    resultText.visibility = View.VISIBLE
+                    resultText.text = text.text
+                } else {
+                    resultText.visibility = View.GONE
+                }
             }
             .addOnFailureListener { e ->
                 Log.e(TAG, "Text recognition failed", e)
+                resultText.visibility = View.VISIBLE
                 resultText.text = "Error: ${e.message}"
             }
     }
@@ -190,10 +197,12 @@ class MainActivity : AppCompatActivity() {
         faceDetector.process(image)
             .addOnSuccessListener { faces ->
                 Log.d(TAG, "Face detection successful: ${faces.size} faces found")
+                resultText.visibility = View.VISIBLE
                 resultText.text = "Detected ${faces.size} faces"
             }
             .addOnFailureListener { e ->
                 Log.e(TAG, "Face detection failed", e)
+                resultText.visibility = View.VISIBLE
                 resultText.text = "Error: ${e.message}"
             }
     }
