@@ -7,7 +7,10 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.*
+import androidx.camera.core.Camera
+import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageAnalysis
+import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
@@ -19,19 +22,23 @@ import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.TextRecognizer
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
 
+/**
+ * MainActivity handles the camera preview and ML Kit processing.
+ * It uses CameraX for camera operations and ML Kit for text/face detection.
+ */
 @androidx.camera.core.ExperimentalGetImage
 class MainActivity : AppCompatActivity() {
-    // CameraX components
-    private lateinit var cameraProvider: ProcessCameraProvider
-    private lateinit var camera: Camera
-    private lateinit var preview: Preview
-    private lateinit var imageAnalyzer: ImageAnalysis
+    // CameraX components for camera operations
+    private lateinit var cameraProvider: ProcessCameraProvider  // Manages camera lifecycle
+    private lateinit var camera: Camera                        // Camera instance
+    private lateinit var preview: Preview                      // Camera preview use case
+    private lateinit var imageAnalyzer: ImageAnalysis          // Image analysis use case
     
     // UI components
-    private lateinit var viewFinder: PreviewView
-    private lateinit var resultText: TextView
+    private lateinit var viewFinder: PreviewView  // Displays camera preview
+    private lateinit var resultText: TextView     // Shows detection results
     
-    // ML Kit analyzers
+    // ML Kit analyzers - initialized lazily to save resources
     private val textRecognizer by lazy {
         TextRecognition.getClient(TextRecognizerOptions.Builder().build())
     }
@@ -41,15 +48,18 @@ class MainActivity : AppCompatActivity() {
             .build()
     )
     
+    // Current analysis mode (text or face detection)
     private var analysisMode: AnalysisMode = AnalysisMode.TEXT
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
+        // Initialize UI components
         viewFinder = findViewById(R.id.viewFinder)
         resultText = findViewById(R.id.resultText)
         
+        // Check and request camera permissions if needed
         if (allPermissionsGranted()) {
             startCamera()
         } else {
@@ -57,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                 this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS)
         }
         
+        // Set up mode switching buttons
         findViewById<Button>(R.id.textButton).setOnClickListener {
             analysisMode = AnalysisMode.TEXT
             bindAnalyzer()
@@ -68,6 +79,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Initializes the camera and starts the preview
+     */
     private fun startCamera() {
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
 
@@ -77,18 +91,25 @@ class MainActivity : AppCompatActivity() {
         }, ContextCompat.getMainExecutor(this))
     }
 
+    /**
+     * Sets up the camera preview and image analysis use cases
+     */
     private fun bindAnalyzer() {
+        // Set up camera preview
         val preview = Preview.Builder().build()
         preview.setSurfaceProvider(viewFinder.surfaceProvider)
 
+        // Configure image analysis
         imageAnalyzer = ImageAnalysis.Builder()
             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
             .build()
 
+        // Process each frame
         imageAnalyzer.setAnalyzer(ContextCompat.getMainExecutor(this)) { imageProxy ->
             val mediaImage = imageProxy.image
             if (mediaImage != null) {
                 val image = InputImage.fromMediaImage(mediaImage, imageProxy.imageInfo.rotationDegrees)
+                // Process image based on selected mode
                 when (analysisMode) {
                     AnalysisMode.TEXT -> processText(image)
                     AnalysisMode.FACE -> processFaces(image)
@@ -98,6 +119,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         try {
+            // Unbind previous use cases and bind new ones
             cameraProvider.unbindAll()
             camera = cameraProvider.bindToLifecycle(
                 this,
@@ -110,6 +132,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Processes the image for text recognition
+     */
     private fun processText(image: InputImage) {
         textRecognizer.process(image)
             .addOnSuccessListener { text ->
@@ -120,6 +145,9 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
+    /**
+     * Processes the image for face detection
+     */
     private fun processFaces(image: InputImage) {
         faceDetector.process(image)
             .addOnSuccessListener { faces ->
@@ -130,6 +158,9 @@ class MainActivity : AppCompatActivity() {
             }
     }
 
+    /**
+     * Checks if all required permissions are granted
+     */
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
     }
@@ -140,6 +171,9 @@ class MainActivity : AppCompatActivity() {
         private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
     }
 
+    /**
+     * Enum defining the available analysis modes
+     */
     enum class AnalysisMode {
         TEXT, FACE
     }
