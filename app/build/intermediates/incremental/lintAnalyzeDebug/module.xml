@@ -1,0 +1,25 @@
+<lint-module
+    format="1"
+    dir="/Users/xiaorongli/Dev/vision-lens-android/app"
+    name=":app"
+    type="APP"
+    maven="vision-lens-android:app:"
+    agpVersion="8.1.0"
+    buildFolder="build"
+    bootClassPath="/Users/xiaorongli/Library/Android/sdk/platforms/android-34/android.jar:/Users/xiaorongli/Library/Android/sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="UnsafeOptInUsageError"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="UnsafeOptInUsageError"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

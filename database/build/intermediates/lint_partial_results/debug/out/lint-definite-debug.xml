@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"/>
+        <location
+            file="${:database*projectDir}/build.gradle"
+            line="13"
+            column="9"
+            startOffset="216"
+            endLine="13"
+            endColumn="21"
+            endOffset="228"/>
+    </incident>
+
+    <incident
+        id="KaptUsageInsteadOfKsp"
+        severity="warning"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp">
+        <show-url
+            description="Learn about how to enable KSP and use the KSP processor for this dependency instead"
+            url="https://developer.android.com/studio/build/migrate-to-ksp"/>
+        <location
+            file="${:database*projectDir}/build.gradle"
+            line="40"
+            column="5"
+            startOffset="923"
+            endLine="40"
+            endColumn="45"
+            endOffset="963"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-runtime than 2.6.0 is available: 2.6.1">
+        <fix-replace
+            description="Change to 2.6.1"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.6.1"/>
+        <location
+            file="${:database*projectDir}/build.gradle"
+            line="38"
+            column="20"
+            startOffset="834"
+            endLine="38"
+            endColumn="54"
+            endOffset="868"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-ktx than 2.6.0 is available: 2.6.1">
+        <fix-replace
+            description="Change to 2.6.1"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.6.1"/>
+        <location
+            file="${:database*projectDir}/build.gradle"
+            line="39"
+            column="20"
+            startOffset="888"
+            endLine="39"
+            endColumn="50"
+            endOffset="918"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.room:room-compiler than 2.6.0 is available: 2.6.1">
+        <fix-replace
+            description="Change to 2.6.1"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.6.1"/>
+        <location
+            file="${:database*projectDir}/build.gradle"
+            line="40"
+            column="10"
+            startOffset="928"
+            endLine="40"
+            endColumn="45"
+            endOffset="963"/>
+    </incident>
+
+</incidents>

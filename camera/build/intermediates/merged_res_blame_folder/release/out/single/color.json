@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_secondary_text_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_secondary_text_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_hint_foreground_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/switch_thumb_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_search_url_text.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/switch_thumb_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_primary_text_material_dark.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_primary_text_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_hint_foreground_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "app.visionlens.camera-merged_res-14:/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "app.visionlens.camera-appcompat-1.1.0-5:/color/abc_primary_text_disable_only_material_light.xml"
+    }
+]

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.0" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="34"
+            replacement="35"/>
+        <location
+            file="${:mlkit*projectDir}/build.gradle"
+            line="12"
+            column="9"
+            startOffset="192"
+            endLine="12"
+            endColumn="21"
+            endOffset="204"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.gms:play-services-mlkit-text-recognition than 19.0.0 is available: 19.0.1">
+        <fix-replace
+            description="Change to 19.0.1"
+            family="Update versions"
+            oldString="19.0.0"
+            replacement="19.0.1"/>
+        <location
+            file="${:mlkit*projectDir}/build.gradle"
+            line="37"
+            column="20"
+            startOffset="812"
+            endLine="37"
+            endColumn="88"
+            endOffset="880"/>
+    </incident>
+
+</incidents>

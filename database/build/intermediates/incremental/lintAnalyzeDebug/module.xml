@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/xiaorongli/Dev/vision-lens-android/database"
+    name=":database"
+    type="LIBRARY"
+    maven="vision-lens-android:database:"
+    agpVersion="8.1.0"
+    buildFolder="build"
+    bootClassPath="/Users/xiaorongli/Library/Android/sdk/platforms/android-34/android.jar:/Users/xiaorongli/Library/Android/sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>
