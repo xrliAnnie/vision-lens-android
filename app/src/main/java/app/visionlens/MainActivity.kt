@@ -139,15 +139,52 @@ class MainActivity : AppCompatActivity() {
         imageAnalyzer.setAnalyzer(ContextCompat.getMainExecutor(this)) { imageProxy ->
             val mediaImage = imageProxy.image
             if (mediaImage != null) {
+                Log.v(TAG, "Processing frame: ${mediaImage.width}x${mediaImage.height}")
                 val image = InputImage.fromMediaImage(mediaImage, imageProxy.imageInfo.rotationDegrees)
+                
+                // Process image based on selected mode
                 when (analysisMode) {
-                    AnalysisMode.TEXT -> processText(image)
-                    AnalysisMode.FACE -> processFaces(image)
+                    AnalysisMode.TEXT -> {
+                        textRecognizer.process(image)
+                            .addOnSuccessListener { text ->
+                                Log.d(TAG, "Text recognized: ${text.text}")
+                                if (text.text.isNotEmpty()) {
+                                    resultText.visibility = View.VISIBLE
+                                    resultText.text = text.text
+                                } else {
+                                    resultText.visibility = View.GONE
+                                }
+                            }
+                            .addOnFailureListener { e ->
+                                Log.e(TAG, "Text recognition failed", e)
+                                resultText.visibility = View.VISIBLE
+                                resultText.text = "Error: ${e.message}"
+                            }
+                            .addOnCompleteListener {
+                                imageProxy.close()  // Close only after ML Kit is done
+                            }
+                    }
+                    AnalysisMode.FACE -> {
+                        faceDetector.process(image)
+                            .addOnSuccessListener { faces ->
+                                Log.d(TAG, "Face detection successful: ${faces.size} faces found")
+                                resultText.visibility = View.VISIBLE
+                                resultText.text = "Detected ${faces.size} faces"
+                            }
+                            .addOnFailureListener { e ->
+                                Log.e(TAG, "Face detection failed", e)
+                                resultText.visibility = View.VISIBLE
+                                resultText.text = "Error: ${e.message}"
+                            }
+                            .addOnCompleteListener {
+                                imageProxy.close()  // Close only after ML Kit is done
+                            }
+                    }
                 }
             } else {
                 Log.w(TAG, "Skipping frame - null image")
+                imageProxy.close()
             }
-            imageProxy.close()  // ✅ Ensure proper release
         }
 
         try {
@@ -165,46 +202,6 @@ class MainActivity : AppCompatActivity() {
         } catch (e: Exception) {
             Log.e(TAG, "Use case binding failed", e)
         }
-    }
-
-    /**
-     * Processes the image for text recognition
-     */
-    private fun processText(image: InputImage) {
-        Log.d(TAG, "Processing image for text recognition")
-        textRecognizer.process(image)
-            .addOnSuccessListener { text ->
-                Log.d(TAG, "Text recognized: ${text.text}")
-                if (text.text.isNotEmpty()) {
-                    resultText.visibility = View.VISIBLE
-                    resultText.text = text.text
-                } else {
-                    resultText.visibility = View.GONE
-                }
-            }
-            .addOnFailureListener { e ->
-                Log.e(TAG, "Text recognition failed", e)
-                resultText.visibility = View.VISIBLE
-                resultText.text = "Error: ${e.message}"
-            }
-    }
-
-    /**
-     * Processes the image for face detection
-     */
-    private fun processFaces(image: InputImage) {
-        Log.v(TAG, "Processing image for face detection")
-        faceDetector.process(image)
-            .addOnSuccessListener { faces ->
-                Log.d(TAG, "Face detection successful: ${faces.size} faces found")
-                resultText.visibility = View.VISIBLE
-                resultText.text = "Detected ${faces.size} faces"
-            }
-            .addOnFailureListener { e ->
-                Log.e(TAG, "Face detection failed", e)
-                resultText.visibility = View.VISIBLE
-                resultText.text = "Error: ${e.message}"
-            }
     }
 
     /**
